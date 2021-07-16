@@ -3,15 +3,16 @@
 <head>
     <title>Web Technology</title>
     <link rel="stylesheet" type="text/css" href="css/index.css">
+    <script type="text/javascript" src="js/index.js"></script>
 </head>
 <body>
     <div class="form-container">
-        <form>
+        <form action="home.html" onsubmit="return validate()">
             <div class="input-container">
                 <label class="topic">Web Technology</label>
-                <input type="text" placeholder="Username">
-                <input type="password" placeholder="Password">
-                <button class="login">Login</button>
+                <input type="text" id="name" placeholder="Username">
+                <input type="password" id="pass" placeholder="Password">
+                <button class="login" type="submit" id="fp">Login</button>
             </div>
         </form>
     </div>
