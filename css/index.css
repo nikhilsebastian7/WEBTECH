@@ -2,5 +2,48 @@
 {
 	margin: 0px;
 	padding: 0px;
-	background: #4c3966;
+	background: #160166;
+}
+.form-container
+{
+	display: block;
+	border: 1px solid white;
+	width: 80%;
+	margin: auto;
+	align-items: center;
+	margin-top: 30px;
+	padding: 5%;
+}
+.input-container
+{
+	display: block;
+	text-align: center;
+	align-items: center;
+	padding: 30px;
+	width: 80%;
+	margin: auto;
+	border: 1px solid red;
+}
+input
+{
+	display: block;
+	background: #ffffff;
+	text-align: center;
+	width: 100%;
+	margin-top: 10px;
+	height: 30px;
+}
+.login
+{
+	display: block;
+	text-align: center;
+	width: 50%;
+	margin: auto;
+	height: 50px;
+	margin-top: 10px;
+}
+.topic
+{
+	color: white;
+	font-size: 30px;
 }
