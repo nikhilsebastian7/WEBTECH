@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Basics | Canvas</title>
+</head>
+<body>
+    <canvas id="canvas">
+
+    </canvas>
+</body>
+<script>
+    var temp = document.getElementById("canvas");
+    var ctx=temp.getContext("2d");
+    ctx.height=540;
+    ctx.width=540;
+    ctx.beginPath();
+
+    //Line
+    ctx.moveTo(0,0);
+    ctx.lineTo(30,30);
+    ctx.stroke();
+
+    //rectangle
+    ctx.beginPath();
+    ctx.rect(20,20,60,80);
+    ctx.stroke();
+
+    //Arc
+    ctx.beginPath();
+    ctx.arc(120,120,60,Math.PI,Math.PI/3,true);
+    ctx.stroke();
+</script>
+</html>

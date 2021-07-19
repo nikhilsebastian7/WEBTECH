@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Transform | Canvas</title>
+</head>
+<body>
+    <canvas id="canvas" height="240" width="240">
+
+    </canvas>
+</body>
+<script>
+    var temp = document.getElementById("canvas");
+    var ctx=temp.getContext("2d");
+    ctx.beginPath();
+    
+    //Scaling
+    ctx.rect(20,20,60,60);
+    ctx.scale(2,2);
+    ctx.rect(20,20,60,60);
+    ctx.stroke();
+</script>
+</html>

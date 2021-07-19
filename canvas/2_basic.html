@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Transform | Canvas</title>
+</head>
+<body>
+    <canvas id="canvas" height="540" width="540">
+
+    </canvas>
+</body>
+<script>
+    var temp = document.getElementById("canvas");
+    var ctx=temp.getContext("2d");
+    ctx.beginPath();
+    ctx.rect(20,20,120,120);
+    ctx.translate(20,20);
+    ctx.rect(20,20,120,120);
+    ctx.stroke();
+
+    //rotation
+    ctx.rotate(Math.PI/180*20);
+    ctx.rect(60,60,120,120);
+    ctx.stroke();
+</script>
+</html>
