@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <canvas id="canvas" height="240" width="240" style="border: 1px solid #000000; margin: 10px;">
+
+    </canvas>
+    <script>
+        var x=document.getElementById("canvas");
+        var ctx=x.getContext("2d");
+
+        ctx.beginPath();
+
+        //translation
+        ctx.rect(20,20,120,120);
+        ctx.translate(20,20);  //remaps position ie x and y
+        ctx.rect(20,20,120,120);
+        ctx.stroke();
+
+        //Rotation
+        ctx.rotate(Math.PI/180*20);  //rotate by 20 degree
+        ctx.rect(50,50,100,100);
+        ctx.stroke();
+
+    </script>
+</body>
+</html>
