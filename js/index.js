@@ -16,8 +16,8 @@ function stringToHash(string)
 
 function validate()
 {
-    var n=108399386;
-    var p=-1994359877;
+    var n=-1178789810;
+    var p=-850725560;
 	var name = document.getElementById("name").value;
     var password = document.getElementById("pass").value;
     var nme=stringToHash(name);
